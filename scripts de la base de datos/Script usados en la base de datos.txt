@@ -1,0 +1,243 @@
+CREATE DATABASE Cine;
+GO
+USE Cine;
+GO
+
+CREATE TABLE Categoria (
+    CategoriaId INT IDENTITY(1,1) PRIMARY KEY,
+    Nombre NVARCHAR(100) NOT NULL UNIQUE
+);
+
+CREATE TABLE Pelicula (
+    PeliculaId INT IDENTITY(1,1) PRIMARY KEY,
+    Titulo NVARCHAR(200) NOT NULL,
+    DuracionMin INT NOT NULL CHECK (DuracionMin > 0),
+    Clasificacion NVARCHAR(20),
+    FechaEstreno DATE,
+    Activa BIT NOT NULL DEFAULT(1),
+    Sinopsis NVARCHAR(500)
+);
+
+CREATE TABLE PeliculaCategoria (
+    PeliculaId INT NOT NULL,
+    CategoriaId INT NOT NULL,
+    CONSTRAINT PK_PeliculaCategoria PRIMARY KEY (PeliculaId, CategoriaId),
+    CONSTRAINT FK_PC_Pelicula FOREIGN KEY (PeliculaId) REFERENCES Pelicula(PeliculaId),
+    CONSTRAINT FK_PC_Categoria FOREIGN KEY (CategoriaId) REFERENCES Categoria(CategoriaId)
+);
+
+CREATE TABLE Sala (
+    SalaId INT IDENTITY(1,1) PRIMARY KEY,
+    Nombre NVARCHAR(50) NOT NULL UNIQUE,
+    Capacidad INT NOT NULL CHECK (Capacidad > 0),
+    Habilitada BIT NOT NULL DEFAULT(1)
+);
+
+CREATE TABLE Funcion (
+    FuncionId INT IDENTITY(1,1) PRIMARY KEY,
+    PeliculaId INT NOT NULL,
+    SalaId INT NOT NULL,
+    FechaHoraInicio DATETIME2(0) NOT NULL,
+    Precio DECIMAL(8,2) NOT NULL CHECK (Precio >= 0),
+    Idioma NVARCHAR(20),
+    Formato NVARCHAR(10),
+    Dia AS CAST(FechaHoraInicio AS DATE) PERSISTED,
+    CONSTRAINT FK_F_Pelicula FOREIGN KEY (PeliculaId) REFERENCES Pelicula(PeliculaId),
+    CONSTRAINT FK_F_Sala FOREIGN KEY (SalaId) REFERENCES Sala(SalaId),
+    CONSTRAINT UQ_F_Sala_Fecha UNIQUE (SalaId, FechaHoraInicio)
+);
+
+CREATE TABLE Cliente (
+    ClienteId INT IDENTITY(1,1) PRIMARY KEY,
+    Nombre NVARCHAR(150) NOT NULL,
+    Email NVARCHAR(200) UNIQUE
+);
+
+CREATE TABLE Venta (
+    VentaId INT IDENTITY(1,1) PRIMARY KEY,
+    FuncionId INT NOT NULL,
+    ClienteId INT,
+    FechaVenta DATETIME2(0) NOT NULL DEFAULT SYSDATETIME(),
+    Cantidad INT NOT NULL CHECK (Cantidad > 0),
+    Estado NVARCHAR(12) NOT NULL DEFAULT('PAGADA')
+        CHECK (Estado IN ('RESERVA','PAGADA','CANCELADA')),
+    CONSTRAINT FK_V_Funcion FOREIGN KEY (FuncionId) REFERENCES Funcion(FuncionId),
+    CONSTRAINT FK_V_Cliente FOREIGN KEY (ClienteId) REFERENCES Cliente(ClienteId)
+);
+
+CREATE INDEX IX_Funcion_Dia_Pelicula ON Funcion (Dia, PeliculaId);
+CREATE INDEX IX_Venta_Funcion_Estado ON Venta (FuncionId, Estado);
+
+CREATE TABLE Asiento (
+    AsientoId INT IDENTITY(1,1) PRIMARY KEY,
+    SalaId INT NOT NULL,
+    Codigo NVARCHAR(10) NOT NULL,
+    CONSTRAINT FK_Asiento_Sala FOREIGN KEY (SalaId) REFERENCES Sala(SalaId),
+    CONSTRAINT UQ_Asiento_SalaCodigo UNIQUE (SalaId, Codigo)
+);
+
+CREATE TABLE AsientoOcupado (
+    AsientoOcupadoId INT IDENTITY(1,1) PRIMARY KEY,
+    FuncionId INT NOT NULL,
+    AsientoId INT NOT NULL,
+    VentaId INT NOT NULL,
+    CONSTRAINT FK_AO_Funcion FOREIGN KEY (FuncionId) REFERENCES Funcion(FuncionId),
+    CONSTRAINT FK_AO_Asiento FOREIGN KEY (AsientoId) REFERENCES Asiento(AsientoId),
+    CONSTRAINT FK_AO_Venta FOREIGN KEY (VentaId) REFERENCES Venta(VentaId),
+    CONSTRAINT UQ_AO_Funcion_Asiento UNIQUE (FuncionId, AsientoId)
+);
+GO
+
+CREATE VIEW V_DisponibilidadFunciones AS
+SELECT
+    f.FuncionId,
+    f.SalaId,
+    f.PeliculaId,
+    f.FechaHoraInicio,
+    f.Dia,
+    f.Precio,
+    s.Capacidad,
+    ISNULL((SELECT SUM(v.Cantidad) FROM Venta v WHERE v.FuncionId = f.FuncionId AND v.Estado <> 'CANCELADA'), 0) AS Vendidos,
+    s.Capacidad - ISNULL((SELECT SUM(v.Cantidad) FROM Venta v WHERE v.FuncionId = f.FuncionId AND v.Estado <> 'CANCELADA'), 0) AS Disponibles
+FROM Funcion f
+JOIN Sala s ON s.SalaId = f.SalaId;
+GO
+
+CREATE VIEW V_AsientosPorFuncion AS
+SELECT 
+    a.AsientoId,
+    a.Codigo AS Asiento,
+    f.FuncionId,
+    s.Nombre AS Sala,
+    CASE WHEN ao.AsientoId IS NOT NULL THEN 'OCUPADO' ELSE 'DISPONIBLE' END AS Estado
+FROM Asiento a
+JOIN Sala s ON s.SalaId = a.SalaId
+CROSS JOIN Funcion f
+LEFT JOIN AsientoOcupado ao ON ao.AsientoId = a.AsientoId AND ao.FuncionId = f.FuncionId
+WHERE f.SalaId = s.SalaId;
+GO
+
+CREATE OR ALTER PROCEDURE sp_GenerarAsientosPorSala
+    @SalaId INT,
+    @Filas INT = 5,
+    @Columnas INT = 10
+AS
+BEGIN
+    DECLARE @Fila INT = 1, @Col INT;
+    DECLARE @Codigo NVARCHAR(10);
+
+    WHILE @Fila <= @Filas
+    BEGIN
+        SET @Col = 1;
+        WHILE @Col <= @Columnas
+        BEGIN
+            SET @Codigo = CHAR(64 + @Fila) + CAST(@Col AS NVARCHAR(5));
+            INSERT INTO Asiento (SalaId, Codigo) VALUES (@SalaId, @Codigo);
+            SET @Col += 1;
+        END
+        SET @Fila += 1;
+    END
+END;
+GO
+
+CREATE OR ALTER PROCEDURE sp_ComprarBoletos
+    @FuncionId INT,
+    @ClienteId INT = NULL,
+    @Cantidad INT,
+    @Estado NVARCHAR(12) = 'PAGADA'
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    IF @Cantidad <= 0 
+        THROW 50001, 'La cantidad debe ser mayor que cero.', 1;
+
+    BEGIN TRAN;
+
+    DECLARE @Disponibles INT, @SalaId INT, @VentaId INT;
+
+    SELECT TOP(1)
+        @Disponibles = d.Disponibles,
+        @SalaId = f.SalaId
+    FROM V_DisponibilidadFunciones d
+    JOIN Funcion f ON f.FuncionId = d.FuncionId
+    WHERE d.FuncionId = @FuncionId
+    FOR UPDATE;
+
+    IF @Disponibles < @Cantidad
+    BEGIN
+        ROLLBACK TRAN;
+        THROW 50002, 'No hay asientos suficientes.', 1;
+    END
+
+    INSERT INTO Venta (FuncionId, ClienteId, Cantidad, Estado)
+    VALUES (@FuncionId, @ClienteId, @Cantidad, @Estado);
+
+    SET @VentaId = SCOPE_IDENTITY();
+
+    ;WITH Disponibles AS (
+        SELECT TOP(@Cantidad) a.AsientoId
+        FROM Asiento a
+        LEFT JOIN AsientoOcupado ao ON ao.AsientoId = a.AsientoId AND ao.FuncionId = @FuncionId
+        WHERE a.SalaId = @SalaId AND ao.AsientoId IS NULL
+        ORDER BY a.AsientoId
+    )
+    INSERT INTO AsientoOcupado (FuncionId, AsientoId, VentaId)
+    SELECT @FuncionId, AsientoId, @VentaId
+    FROM Disponibles;
+
+    COMMIT TRAN;
+END;
+GO
+
+
+
+
+INSERT INTO Categoria (Nombre) VALUES
+('Acción'),
+('Aventura'),
+('Comedia'),
+('Drama'),
+('Terror'),
+('Ciencia Ficción'),
+('Animación');
+
+INSERT INTO Pelicula (Titulo, DuracionMin, Clasificacion, FechaEstreno, Activa, Sinopsis) VALUES
+('Avengers: Endgame', 181, 'PG-13', '2019-04-26', 1, 'Los vengadores enfrentan a Thanos.'),
+('IT: Capítulo 2', 169, 'R', '2019-09-06', 1, 'El payaso Pennywise regresa.'),
+('Toy Story 4', 100, 'G', '2019-06-21', 1, 'Woody enfrenta nuevos desafíos.'),
+('Interestelar', 169, 'PG-13', '2014-11-07', 1, 'Exploración espacial más allá de los límites.'),
+('John Wick 4', 169, 'R', '2023-03-24', 1, 'El asesino legendario enfrenta a la Alta Mesa.');
+
+
+INSERT INTO PeliculaCategoria VALUES
+(1,1), (1,6),
+(2,5),
+(3,7),
+(4,6), (4,4),
+(5,1);
+
+
+INSERT INTO Sala (Nombre, Capacidad, Habilitada) VALUES
+('Sala 1', 50, 1),
+('Sala 2', 40, 1),
+('Sala 3', 30, 1);
+
+
+EXEC sp_GenerarAsientosPorSala 1, 5, 10; -- 50 asientos
+EXEC sp_GenerarAsientosPorSala 2, 4, 10; -- 40 asientos
+EXEC sp_GenerarAsientosPorSala 3, 3, 10; -- 30 asientos
+
+
+INSERT INTO Funcion (PeliculaId, SalaId, FechaHoraInicio, Precio, Idioma, Formato) VALUES
+(1, 1, '2025-02-18 18:00', 5.00, 'Doblada', '2D'),
+(1, 1, '2025-02-18 21:00', 5.00, 'Subtitulada', '2D'),
+(4, 2, '2025-02-18 19:00', 4.50, 'Subtitulada', '2D'),
+(5, 3, '2025-02-18 20:00', 5.50, 'Doblada', '3D'),
+(3, 2, '2025-02-19 16:00', 3.00, 'Doblada', '2D');
+
+
+INSERT INTO Cliente (Nombre, Email) VALUES
+('Juan Pérez', 'juanp@example.com'),
+('María López', 'marial@example.com'),
+('Carlos Rivera', 'carlosr@example.com');

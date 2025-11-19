@@ -1,0 +1,113 @@
+SeatsForm: Cargar start - FuncionId=5
+SeatsForm: Cargar start - FuncionId=7
+SeatsForm: Cargar start - FuncionId=7
+SeatsForm: Cargar start - FuncionId=7
+SeatsForm: Cargar start - FuncionId=5
+SeatsForm: Cargar start - FuncionId=8
+SeatsForm: Cargar start - FuncionId=1
+Seat_Click: selected 35
+Seat_Click: selected 36
+Seat_Click: selected 26
+Seat_Click: selected 27
+SeatsForm: Cargar start - FuncionId=1
+SeatsForm: Cargar start - FuncionId=1
+Seat_Click: selected 24
+Seat_Click: selected 15
+Seat_Click: selected 16
+Seat_Click: selected 17
+SeatsForm: Cargar start - FuncionId=3
+SeatsForm: Cargar start - FuncionId=1
+SeatsForm: Cargar start - FuncionId=1
+SeatsForm: Cargar start - FuncionId=1
+Seat_Click: selected 34
+Seat_Click: deselected 34
+SeatsForm: Cargar start - FuncionId=1
+SeatsForm: Cargar start - FuncionId=1
+Seat_Click: selected 18
+Seat_Click: selected 19
+Seat_Click: selected 20
+SeatsForm: Cargar start - FuncionId=1
+SeatsForm: Cargar start - FuncionId=3
+SeatsForm: Cargar start - FuncionId=1
+Seat_Click: selected 38
+Seat_Click: selected 28
+Seat_Click: deselected 38
+Seat_Click: deselected 28
+SeatsForm: Cargar start - FuncionId=3
+Seat_Click: selected 76
+Seat_Click: selected 75
+SeatsForm: Cargar start - FuncionId=3
+Seat_Click: selected 52
+Seat_Click: selected 51
+SeatsForm: Cargar start - FuncionId=1
+SeatsForm: Cargar start - FuncionId=1
+Seat_Click: selected 37
+Seat_Click: selected 38
+SeatsForm: Cargar start - FuncionId=1
+SeatsForm: Cargar start - FuncionId=3
+SeatsForm: Cargar start - FuncionId=1
+SeatsForm: Cargar start - FuncionId=4
+SeatsForm: Cargar start - FuncionId=1
+SeatsForm: Cargar start - FuncionId=1
+Seat_Click: selected 23
+Seat_Click: selected 22
+SeatsForm: Cargar start - FuncionId=1
+Seat_Click: selected 1
+Seat_Click: selected 2
+SeatsForm: Cargar start - FuncionId=1
+SeatsForm: Cargar start - FuncionId=1
+Seat_Click: selected 42
+Seat_Click: selected 32
+Seat_Click: selected 33
+Seat_Click: selected 43
+SeatsForm: Cargar start - FuncionId=1
+Seat_Click: selected 48
+Seat_Click: selected 38
+Seat_Click: selected 37
+Seat_Click: selected 47
+SeatsForm: Cargar start - FuncionId=1
+SeatsForm: Cargar start - FuncionId=1
+Seat_Click: selected 37
+Seat_Click: selected 38
+Seat_Click: selected 28
+Seat_Click: selected 29
+Seat_Click: selected 39
+Seat_Click: selected 30
+Seat_Click: selected 40
+Seat_Click: selected 49
+Seat_Click: selected 48
+Seat_Click: selected 50
+Seat_Click: selected 47
+Seat_Click: selected 46
+Seat_Click: selected 45
+Seat_Click: selected 44
+Seat_Click: selected 34
+Seat_Click: selected 33
+Seat_Click: selected 43
+Seat_Click: selected 32
+Seat_Click: selected 42
+Seat_Click: selected 41
+Seat_Click: selected 31
+Seat_Click: selected 21
+Seat_Click: selected 11
+Seat_Click: selected 12
+Seat_Click: selected 13
+Seat_Click: selected 3
+Seat_Click: selected 4
+Seat_Click: selected 14
+Seat_Click: selected 5
+Seat_Click: selected 8
+Seat_Click: selected 9
+Seat_Click: selected 10
+Seat_Click: selected 7
+Seat_Click: selected 6
+Seat_Click: selected 25
+SeatsForm: Cargar start - FuncionId=1
+SeatsForm: Cargar start - FuncionId=3
+SeatsForm: Cargar start - FuncionId=1
+SeatsForm: Cargar start - FuncionId=4
+SeatsForm: Cargar start - FuncionId=2
+SeatsForm: Cargar start - FuncionId=5
+SeatsForm: Cargar start - FuncionId=5
+SeatsForm: Cargar start - FuncionId=5
+SeatsForm: Cargar start - FuncionId=5
