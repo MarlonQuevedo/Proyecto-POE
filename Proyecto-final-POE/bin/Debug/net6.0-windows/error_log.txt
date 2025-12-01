@@ -1,0 +1,917 @@
+2025-11-18T14:29:13 - Error al cargar funciones:
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader()
+   at CineApp.MainForm.MainForm_Load(Object s, EventArgs e) in C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\MainForm.cs:line 52
+
+2025-11-18T14:36:20 - Error al cargar funciones:
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader()
+   at CineApp.MainForm.MainForm_Load(Object s, EventArgs e) in C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\MainForm.cs:line 65
+
+2025-11-18T14:50:38 - Error al cargar funciones:
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader()
+   at CineApp.MainForm.MainForm_Load(Object s, EventArgs e) in C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\MainForm.cs:line 73
+
+2025-11-18T14:53:34 - TestDatabase open: conn=Open; connCSLen=113
+2025-11-18T14:53:36 - Pre-Execute: cmd=OK; CommandTextLength=306; conn=Open; connCSLen=113
+2025-11-18T14:53:44 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Precio'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at CineApp.MoviesForm.LoadMovies() in C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\MoviesForm.cs:line 47
+   at CineApp.MoviesForm.MoviesForm_Load(Object s, EventArgs e) in C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\MoviesForm.cs:line 36
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WmShowWindow(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:aca24be6-5a67-4ae8-bf49-3777ee67eb6f
+Error Number:207,State:1,Class:16
+
+2025-11-18T14:53:55 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Precio'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at CineApp.MovieEditForm.BtnOk_Click(Object s, EventArgs e) in C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\MoviesForm.cs:line 139
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:aca24be6-5a67-4ae8-bf49-3777ee67eb6f
+Error Number:207,State:1,Class:16
+
+2025-11-18T14:53:56 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Precio'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at CineApp.MovieEditForm.BtnOk_Click(Object s, EventArgs e) in C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\MoviesForm.cs:line 139
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:aca24be6-5a67-4ae8-bf49-3777ee67eb6f
+Error Number:207,State:1,Class:16
+
+2025-11-18T14:53:57 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Precio'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at CineApp.MovieEditForm.BtnOk_Click(Object s, EventArgs e) in C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\MoviesForm.cs:line 139
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:aca24be6-5a67-4ae8-bf49-3777ee67eb6f
+Error Number:207,State:1,Class:16
+
+2025-11-18T14:53:57 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Precio'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at CineApp.MovieEditForm.BtnOk_Click(Object s, EventArgs e) in C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\MoviesForm.cs:line 139
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:aca24be6-5a67-4ae8-bf49-3777ee67eb6f
+Error Number:207,State:1,Class:16
+
+2025-11-18T14:53:57 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Precio'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at CineApp.MovieEditForm.BtnOk_Click(Object s, EventArgs e) in C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\MoviesForm.cs:line 139
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:aca24be6-5a67-4ae8-bf49-3777ee67eb6f
+Error Number:207,State:1,Class:16
+
+2025-11-18T14:53:57 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Precio'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at CineApp.MovieEditForm.BtnOk_Click(Object s, EventArgs e) in C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\MoviesForm.cs:line 139
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:aca24be6-5a67-4ae8-bf49-3777ee67eb6f
+Error Number:207,State:1,Class:16
+
+2025-11-18T14:53:57 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Precio'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at CineApp.MovieEditForm.BtnOk_Click(Object s, EventArgs e) in C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\MoviesForm.cs:line 139
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:aca24be6-5a67-4ae8-bf49-3777ee67eb6f
+Error Number:207,State:1,Class:16
+
+2025-11-18T14:53:57 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Precio'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at CineApp.MovieEditForm.BtnOk_Click(Object s, EventArgs e) in C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\MoviesForm.cs:line 139
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:aca24be6-5a67-4ae8-bf49-3777ee67eb6f
+Error Number:207,State:1,Class:16
+
+2025-11-18T14:53:58 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Precio'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at CineApp.MovieEditForm.BtnOk_Click(Object s, EventArgs e) in C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\MoviesForm.cs:line 139
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:aca24be6-5a67-4ae8-bf49-3777ee67eb6f
+Error Number:207,State:1,Class:16
+
+2025-11-18T14:54:06 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Precio'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at CineApp.ClientForm.LoadFunciones() in C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\ClientForm.cs:line 52
+   at CineApp.ClientForm.ClientForm_Load(Object s, EventArgs e) in C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\ClientForm.cs:line 37
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WmShowWindow(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:aca24be6-5a67-4ae8-bf49-3777ee67eb6f
+Error Number:207,State:1,Class:16
+
+2025-11-18T14:54:15 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Asiento'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at CineApp.SeatsForm.Cargar() in C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\SeatsForm.cs:line 62
+   at CineApp.SeatsForm.SeatsForm_Load(Object s, EventArgs e) in C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\SeatsForm.cs:line 41
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WmShowWindow(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:aca24be6-5a67-4ae8-bf49-3777ee67eb6f
+Error Number:208,State:1,Class:16
+
+2025-11-18T14:58:00 - TestDatabase open: conn=Open; connCSLen=113
+2025-11-18T14:58:08 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Asiento'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at CineApp.SeatsForm.Cargar() in C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\SeatsForm.cs:line 62
+   at CineApp.SeatsForm.SeatsForm_Load(Object s, EventArgs e) in C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\SeatsForm.cs:line 41
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WmShowWindow(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:3d2ed3f9-e10b-4888-b651-d2a1dfcfdb43
+Error Number:208,State:1,Class:16
+
+2025-11-18T15:08:16 - TestDatabase open: conn=Open; connCSLen=113
+2025-11-18T15:08:32 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Asiento'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at CineApp.SeatsForm.Cargar() in c:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\SeatsForm.cs:line 62
+   at CineApp.SeatsForm.SeatsForm_Load(Object s, EventArgs e) in c:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\SeatsForm.cs:line 41
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WmShowWindow(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:3c8c4818-e114-4d44-b36e-821b107b3ff8
+Error Number:208,State:1,Class:16
+
+2025-11-18T15:08:47 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Asiento'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at CineApp.SeatsForm.Cargar() in c:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\SeatsForm.cs:line 62
+   at CineApp.SeatsForm.SeatsForm_Load(Object s, EventArgs e) in c:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\SeatsForm.cs:line 41
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WmShowWindow(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:3c8c4818-e114-4d44-b36e-821b107b3ff8
+Error Number:208,State:1,Class:16
+
+2025-11-18T15:08:51 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Asiento'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at CineApp.SeatsForm.Cargar() in c:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\SeatsForm.cs:line 62
+   at CineApp.SeatsForm.SeatsForm_Load(Object s, EventArgs e) in c:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\SeatsForm.cs:line 41
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WmShowWindow(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:3c8c4818-e114-4d44-b36e-821b107b3ff8
+Error Number:208,State:1,Class:16
+
+2025-11-18T15:13:41 - TestDatabase open: conn=Open; connCSLen=113
+2025-11-18T15:13:45 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Asiento'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at CineApp.SeatsForm.Cargar() in c:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\SeatsForm.cs:line 62
+   at CineApp.SeatsForm.SeatsForm_Load(Object s, EventArgs e) in c:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\SeatsForm.cs:line 41
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WmShowWindow(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:58c8b94b-83fe-4cbd-a33f-a6d734840c1a
+Error Number:208,State:1,Class:16
+
+2025-11-18T15:14:20 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Asiento'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at CineApp.SeatsForm.Cargar() in c:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\SeatsForm.cs:line 62
+   at CineApp.SeatsForm.SeatsForm_Load(Object s, EventArgs e) in c:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\SeatsForm.cs:line 41
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WmShowWindow(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:58c8b94b-83fe-4cbd-a33f-a6d734840c1a
+Error Number:208,State:1,Class:16
+
+2025-11-18T15:15:06 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Asiento'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at CineApp.SeatsForm.Cargar() in c:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\SeatsForm.cs:line 62
+   at CineApp.SeatsForm.SeatsForm_Load(Object s, EventArgs e) in c:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\SeatsForm.cs:line 41
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WmShowWindow(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:58c8b94b-83fe-4cbd-a33f-a6d734840c1a
+Error Number:208,State:1,Class:16
+
+2025-11-18T15:19:10 - TestDatabase open: conn=Open; connCSLen=113
+2025-11-18T15:19:12 - Pre-Execute: cmd=OK; CommandTextLength=306; conn=Open; connCSLen=113
+2025-11-18T15:19:14 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Asiento'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at CineApp.SeatsForm.Cargar() in c:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\SeatsForm.cs:line 71
+   at CineApp.SeatsForm.SeatsForm_Load(Object s, EventArgs e) in c:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\SeatsForm.cs:line 45
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WmShowWindow(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:ba37d98f-a8a1-4084-9180-61a1992adb7d
+Error Number:208,State:1,Class:16
+
+2025-11-18T15:19:48 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'DuracionMin', table 'Cine.dbo.Pelicula'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at CineApp.MovieEditForm.BtnOk_Click(Object s, EventArgs e) in c:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\MoviesForm.cs:line 219
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:ba37d98f-a8a1-4084-9180-61a1992adb7d
+Error Number:515,State:2,Class:16
+
+2025-11-18T15:19:49 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'DuracionMin', table 'Cine.dbo.Pelicula'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at CineApp.MovieEditForm.BtnOk_Click(Object s, EventArgs e) in c:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\MoviesForm.cs:line 219
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:ba37d98f-a8a1-4084-9180-61a1992adb7d
+Error Number:515,State:2,Class:16
+
+2025-11-18T15:19:49 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'DuracionMin', table 'Cine.dbo.Pelicula'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at CineApp.MovieEditForm.BtnOk_Click(Object s, EventArgs e) in c:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\MoviesForm.cs:line 219
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:ba37d98f-a8a1-4084-9180-61a1992adb7d
+Error Number:515,State:2,Class:16
+
+2025-11-18T15:19:49 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'DuracionMin', table 'Cine.dbo.Pelicula'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at CineApp.MovieEditForm.BtnOk_Click(Object s, EventArgs e) in c:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\MoviesForm.cs:line 219
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:ba37d98f-a8a1-4084-9180-61a1992adb7d
+Error Number:515,State:2,Class:16
+
+2025-11-18T15:19:49 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'DuracionMin', table 'Cine.dbo.Pelicula'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at CineApp.MovieEditForm.BtnOk_Click(Object s, EventArgs e) in c:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\MoviesForm.cs:line 219
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:ba37d98f-a8a1-4084-9180-61a1992adb7d
+Error Number:515,State:2,Class:16
+
+2025-11-18T15:19:50 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'DuracionMin', table 'Cine.dbo.Pelicula'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at CineApp.MovieEditForm.BtnOk_Click(Object s, EventArgs e) in c:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\MoviesForm.cs:line 219
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:ba37d98f-a8a1-4084-9180-61a1992adb7d
+Error Number:515,State:2,Class:16
+
+2025-11-18T15:19:57 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Asiento'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at CineApp.SeatsForm.Cargar() in c:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\SeatsForm.cs:line 71
+   at CineApp.SeatsForm.SeatsForm_Load(Object s, EventArgs e) in c:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\SeatsForm.cs:line 45
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WmShowWindow(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:ba37d98f-a8a1-4084-9180-61a1992adb7d
+Error Number:208,State:1,Class:16
+
+2025-11-18T15:20:07 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Asiento'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at CineApp.SeatsForm.Cargar() in c:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\SeatsForm.cs:line 71
+   at CineApp.SeatsForm.SeatsForm_Load(Object s, EventArgs e) in c:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\SeatsForm.cs:line 45
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WmShowWindow(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:ba37d98f-a8a1-4084-9180-61a1992adb7d
+Error Number:208,State:1,Class:16
+
+2025-11-18T15:22:04 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Asiento'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at CineApp.SeatsForm.Cargar() in c:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\SeatsForm.cs:line 71
+   at CineApp.SeatsForm.SeatsForm_Load(Object s, EventArgs e) in c:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\SeatsForm.cs:line 45
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WmShowWindow(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:ba37d98f-a8a1-4084-9180-61a1992adb7d
+Error Number:208,State:1,Class:16
+
+2025-11-18T15:34:06 - TestDatabase open: conn=Open; connCSLen=113
+2025-11-18T15:34:08 - Pre-Execute: cmd=OK; CommandTextLength=306; conn=Open; connCSLen=113
+2025-11-18T15:34:09 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Asiento'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at CineApp.SeatsForm.Cargar() in c:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\SeatsForm.cs:line 76
+   at CineApp.SeatsForm.SeatsForm_Load(Object s, EventArgs e) in c:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\SeatsForm.cs:line 49
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WmShowWindow(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:742b7e93-e68a-4c3a-b584-5942734b53bf
+Error Number:208,State:1,Class:16
+
+2025-11-18T15:48:03 - TestDatabase open: conn=Open; connCSLen=113
+2025-11-18T15:48:08 - UI ThreadException:
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Asiento'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at CineApp.SeatsForm.Cargar() in c:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\SeatsForm.cs:line 76
+   at CineApp.SeatsForm.SeatsForm_Load(Object s, EventArgs e) in c:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\SeatsForm.cs:line 49
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WmShowWindow(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, WM msg, IntPtr wparam, IntPtr lparam)
+ClientConnectionId:733d7a68-6603-4b4b-a1e4-fe3bbb6fb834
+Error Number:208,State:1,Class:16
+
+2025-11-19T17:05:21 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T17:05:23 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
+2025-11-19T17:13:55 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T17:13:56 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
+2025-11-19T17:25:27 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T17:25:28 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
+2025-11-19T17:26:33 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T17:26:45 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T17:26:46 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
+2025-11-19T17:28:43 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T17:28:44 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
+2025-11-19T17:34:33 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T17:44:44 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T18:09:50 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T18:11:00 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T18:11:01 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
+2025-11-19T18:23:22 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T18:26:27 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T18:26:28 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
+2025-11-19T18:39:39 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T18:53:39 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T18:53:41 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
+2025-11-19T18:58:12 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T19:03:44 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T19:16:49 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T19:45:16 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T19:45:29 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T19:45:30 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
+2025-11-19T19:46:54 - TestDatabase open: conn=Open; connCSLen=101
+2025-12-01T15:52:32 - TestDatabase open: conn=Open; connCSLen=101
+2025-12-01T15:52:35 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
+2025-12-01T16:52:42 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T16:52:43 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=72
+2025-12-01T16:54:02 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T16:54:03 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=72
+2025-12-01T16:58:03 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T16:58:05 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=72
+2025-12-01T17:02:34 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T17:02:35 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=72
+2025-12-01T17:11:03 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T17:11:04 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=72
+2025-12-01T17:43:02 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T17:43:03 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=72
+2025-12-01T17:44:18 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T17:48:44 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T17:48:46 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=72
+2025-12-01T17:51:15 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T18:02:51 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T18:07:44 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T18:08:11 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T18:08:12 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=72
+2025-12-01T18:11:35 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T18:11:36 - Pre-Execute: cmd=OK; CommandTextLength=423; conn=Open; connCSLen=72
+2025-12-01T18:17:23 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T18:17:31 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T18:17:33 - Pre-Execute: cmd=OK; CommandTextLength=467; conn=Open; connCSLen=72
+2025-12-01T18:41:29 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T18:42:13 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T18:42:14 - Pre-Execute: cmd=OK; CommandTextLength=467; conn=Open; connCSLen=72
+2025-12-01T18:48:18 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T19:01:16 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T19:07:28 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T19:16:53 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T19:35:36 - TestDatabase open: conn=Open; connCSLen=72

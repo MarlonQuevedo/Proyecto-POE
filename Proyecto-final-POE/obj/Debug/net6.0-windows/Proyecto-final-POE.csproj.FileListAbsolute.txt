@@ -1,0 +1,59 @@
+C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\obj\Debug\net6.0-windows\Proyecto-final-POE.csproj.AssemblyReference.cache
+C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\obj\Debug\net6.0-windows\Proyecto-final-POE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\obj\Debug\net6.0-windows\Proyecto-final-POE.AssemblyInfoInputs.cache
+C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\obj\Debug\net6.0-windows\Proyecto-final-POE.AssemblyInfo.cs
+C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\obj\Debug\net6.0-windows\Proyecto-final-POE.csproj.CoreCompileInputs.cache
+C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\obj\Debug\net6.0-windows\Proyecto-final-POE.sourcelink.json
+C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\bin\Debug\net6.0-windows\App.config
+C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\bin\Debug\net6.0-windows\Proyecto-final-POE.exe
+C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\bin\Debug\net6.0-windows\Proyecto-final-POE.dll.config
+C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\bin\Debug\net6.0-windows\Proyecto-final-POE.deps.json
+C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\bin\Debug\net6.0-windows\Proyecto-final-POE.runtimeconfig.json
+C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\bin\Debug\net6.0-windows\Proyecto-final-POE.dll
+C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\bin\Debug\net6.0-windows\Proyecto-final-POE.pdb
+C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\bin\Debug\net6.0-windows\System.Security.Cryptography.ProtectedData.dll
+C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\obj\Debug\net6.0-windows\Proyecto.F6ECF188.Up2Date
+C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\obj\Debug\net6.0-windows\Proyecto-final-POE.dll
+C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\obj\Debug\net6.0-windows\refint\Proyecto-final-POE.dll
+C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\obj\Debug\net6.0-windows\Proyecto-final-POE.pdb
+C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\obj\Debug\net6.0-windows\Proyecto-final-POE.genruntimeconfig.cache
+C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\obj\Debug\net6.0-windows\ref\Proyecto-final-POE.dll
+C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\lazar\OneDrive\Escritorio\Desarrollo de Software\POE\Proyecto-final-POE\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\bin\Debug\net6.0-windows\App.config
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\bin\Debug\net6.0-windows\Proyecto-final-POE.exe
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\bin\Debug\net6.0-windows\Proyecto-final-POE.dll.config
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\bin\Debug\net6.0-windows\Proyecto-final-POE.deps.json
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\bin\Debug\net6.0-windows\Proyecto-final-POE.runtimeconfig.json
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\bin\Debug\net6.0-windows\Proyecto-final-POE.dll
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\bin\Debug\net6.0-windows\Proyecto-final-POE.pdb
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\bin\Debug\net6.0-windows\System.Security.Cryptography.ProtectedData.dll
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\obj\Debug\net6.0-windows\Proyecto-final-POE.csproj.AssemblyReference.cache
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\obj\Debug\net6.0-windows\Proyecto-final-POE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\obj\Debug\net6.0-windows\Proyecto-final-POE.AssemblyInfoInputs.cache
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\obj\Debug\net6.0-windows\Proyecto-final-POE.AssemblyInfo.cs
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\obj\Debug\net6.0-windows\Proyecto-final-POE.csproj.CoreCompileInputs.cache
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\obj\Debug\net6.0-windows\Proyecto-final-POE.sourcelink.json
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\obj\Debug\net6.0-windows\Proyecto.F6ECF188.Up2Date
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\obj\Debug\net6.0-windows\Proyecto-final-POE.dll
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\obj\Debug\net6.0-windows\refint\Proyecto-final-POE.dll
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\obj\Debug\net6.0-windows\Proyecto-final-POE.pdb
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\obj\Debug\net6.0-windows\Proyecto-final-POE.genruntimeconfig.cache
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\obj\Debug\net6.0-windows\ref\Proyecto-final-POE.dll
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\obj\Debug\net6.0-windows\CineApp.ClientForm.resources
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\obj\Debug\net6.0-windows\CineApp.MainForm.resources
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\obj\Debug\net6.0-windows\CineApp.MoviesForm.resources
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\obj\Debug\net6.0-windows\CineApp.SeatsForm.resources
+C:\Users\aassu\source\repos\MarlonQuevedo\Proyecto-final-POE\obj\Debug\net6.0-windows\Proyecto-final-POE.csproj.GenerateResource.cache
