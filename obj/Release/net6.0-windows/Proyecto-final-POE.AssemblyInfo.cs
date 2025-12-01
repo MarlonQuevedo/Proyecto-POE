@@ -12,9 +12,9 @@ using System;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("Proyecto-final-POE")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7778a45147a094e03a410e9d021ab4caa4f0c387")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+822fa43e657b58850b2e2056ac22fb81f9424b85")]
 [assembly: System.Reflection.AssemblyProductAttribute("Proyecto-final-POE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Proyecto-final-POE")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
