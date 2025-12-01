@@ -8,91 +8,69 @@
 2025-11-18T15:34:06 - TestDatabase open: conn=Open; connCSLen=113
 2025-11-18T15:34:08 - Pre-Execute: cmd=OK; CommandTextLength=306; conn=Open; connCSLen=113
 2025-11-18T15:48:03 - TestDatabase open: conn=Open; connCSLen=113
-2025-11-19T19:48:24 - TestDatabase open: conn=Open; connCSLen=101
-2025-11-19T19:48:24 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
-SeatsForm: Cargar start - FuncionId=1
-SeatsForm: Cargar start - FuncionId=1
-SeatsForm: Cargar start - FuncionId=1
-SeatsForm: Cargar start - FuncionId=3
-SeatsForm: Cargar start - FuncionId=1
-2025-11-19T19:50:51 - TestDatabase open: conn=Open; connCSLen=101
-SeatsForm: Cargar start - FuncionId=1
-2025-11-19T19:51:07 - TestDatabase open: conn=Open; connCSLen=101
-2025-11-19T19:51:07 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
-SeatsForm: Cargar start - FuncionId=1
-2025-11-19T19:51:51 - TestDatabase open: conn=Open; connCSLen=101
-SeatsForm: Cargar start - FuncionId=1
-2025-11-19T19:52:23 - TestDatabase open: conn=Open; connCSLen=101
-SeatsForm: Cargar start - FuncionId=1
-SeatsForm: Cargar start - FuncionId=1
-SeatsForm: Cargar start - FuncionId=3
-2025-11-19T19:52:43 - TestDatabase open: conn=Open; connCSLen=101
-2025-11-19T19:52:43 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
-2025-11-19T20:05:15 - TestDatabase open: conn=Open; connCSLen=101
-SeatsForm: Cargar start - FuncionId=1
-SeatsForm: Cargar start - FuncionId=3
-SeatsForm: Cargar start - FuncionId=3
-2025-11-19T20:06:01 - TestDatabase open: conn=Open; connCSLen=101
-2025-11-19T20:06:01 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
-SeatsForm: Cargar start - FuncionId=1
-SeatsForm: Cargar start - FuncionId=1
-2025-11-19T20:15:39 - TestDatabase open: conn=Open; connCSLen=101
-SeatsForm: Cargar start - FuncionId=1
-SeatsForm: Cargar start - FuncionId=3
-2025-11-19T20:25:25 - TestDatabase open: conn=Open; connCSLen=101
-SeatsForm: Cargar start - FuncionId=1
-SeatsForm: Cargar start - FuncionId=4
-2025-11-19T20:25:39 - TestDatabase open: conn=Open; connCSLen=101
-2025-11-19T20:25:39 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
-SeatsForm: Cargar start - FuncionId=1
-2025-11-19T20:31:52 - TestDatabase open: conn=Open; connCSLen=101
-2025-11-19T20:31:52 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
-2025-11-19T20:39:41 - TestDatabase open: conn=Open; connCSLen=101
-2025-11-19T20:39:42 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
-2025-11-19T20:51:11 - TestDatabase open: conn=Open; connCSLen=101
-SeatsForm: Cargar start - FuncionId=1
-SeatsForm: Cargar start - FuncionId=1
-SeatsForm: Cargar start - FuncionId=1
-2025-11-19T20:52:04 - TestDatabase open: conn=Open; connCSLen=101
-2025-11-19T20:52:04 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
-[11/19/2025 8:52:15 PM] Movie save error: System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'DuracionMin', table 'Cine.dbo.Pelicula'; column does not allow nulls. INSERT fails.
-The statement has been terminated.
-   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
-   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
-   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
-   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
-   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
-   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
-   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
-   at CineApp.MovieEditForm.BtnOk_Click(Object s, EventArgs e) in C:\Users\aassu\OneDrive\Escritorio\Lab-III-POE-Quevedo\Proyecto-final-POE\MoviesForm.cs:line 268
-ClientConnectionId:825f8500-7552-49a9-a0b2-0684d7d66fc4
-Error Number:515,State:2,Class:16
-2025-11-19T21:03:18 - TestDatabase open: conn=Open; connCSLen=101
-2025-11-19T21:03:18 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
-[11/19/2025 9:03:37 PM] Movie save rowsAffected=1, Title=La llorona
-2025-11-19T21:04:05 - TestDatabase open: conn=Open; connCSLen=101
-2025-11-19T21:04:05 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
-2025-11-19T21:10:57 - TestDatabase open: conn=Open; connCSLen=101
-2025-11-19T21:10:58 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
-2025-11-19T21:16:41 - TestDatabase open: conn=Open; connCSLen=101
-2025-11-19T21:16:41 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
-2025-11-19T21:19:51 - TestDatabase open: conn=Open; connCSLen=101
-2025-11-19T21:19:51 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
-SeatsForm: Cargar start - FuncionId=1
-2025-11-19T21:21:52 - TestDatabase open: conn=Open; connCSLen=101
-2025-11-19T21:21:52 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
-SeatsForm: Cargar start - FuncionId=1
-SeatsForm: Cargar start - FuncionId=1
-SeatsForm: Cargar start - FuncionId=1
-SeatsForm: Cargar start - FuncionId=1
-SeatsForm: Cargar start - FuncionId=3
-SeatsForm: Cargar start - FuncionId=1
-SeatsForm: Cargar start - FuncionId=4
-SeatsForm: Cargar start - FuncionId=2
-SeatsForm: Cargar start - FuncionId=5
-2025-11-19T15:18:07 - TestDatabase open: conn=Open; connCSLen=113
-SeatsForm: Cargar start - FuncionId=5
-2025-11-19T15:19:05 - TestDatabase open: conn=Open; connCSLen=113
-2025-11-19T15:19:05 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=113
+2025-11-19T17:05:21 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T17:05:23 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
+2025-11-19T17:13:55 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T17:13:56 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
+2025-11-19T17:25:27 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T17:25:28 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
+2025-11-19T17:26:33 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T17:26:45 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T17:26:46 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
+2025-11-19T17:28:43 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T17:28:44 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
+2025-11-19T17:34:33 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T17:44:44 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T18:09:50 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T18:11:00 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T18:11:01 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
+2025-11-19T18:23:22 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T18:26:27 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T18:26:28 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
+2025-11-19T18:39:39 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T18:53:39 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T18:53:41 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
+2025-11-19T18:58:12 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T19:03:44 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T19:16:49 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T19:45:16 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T19:45:29 - TestDatabase open: conn=Open; connCSLen=101
+2025-11-19T19:45:30 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
+2025-11-19T19:46:54 - TestDatabase open: conn=Open; connCSLen=101
+2025-12-01T15:52:32 - TestDatabase open: conn=Open; connCSLen=101
+2025-12-01T15:52:35 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=101
+2025-12-01T16:52:42 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T16:52:43 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=72
+2025-12-01T16:54:02 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T16:54:03 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=72
+2025-12-01T16:58:03 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T16:58:05 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=72
+2025-12-01T17:02:34 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T17:02:35 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=72
+2025-12-01T17:11:03 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T17:11:04 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=72
+2025-12-01T17:43:02 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T17:43:03 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=72
+2025-12-01T17:44:18 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T17:48:44 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T17:48:46 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=72
+2025-12-01T17:51:15 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T18:02:51 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T18:07:44 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T18:08:11 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T18:08:12 - Pre-Execute: cmd=OK; CommandTextLength=310; conn=Open; connCSLen=72
+2025-12-01T18:11:35 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T18:11:36 - Pre-Execute: cmd=OK; CommandTextLength=423; conn=Open; connCSLen=72
+2025-12-01T18:17:23 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T18:17:31 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T18:17:33 - Pre-Execute: cmd=OK; CommandTextLength=467; conn=Open; connCSLen=72
+2025-12-01T18:41:29 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T18:42:13 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T18:42:14 - Pre-Execute: cmd=OK; CommandTextLength=467; conn=Open; connCSLen=72
+2025-12-01T18:48:18 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T19:01:16 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T19:07:28 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T19:16:53 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T19:35:36 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T20:41:59 - TestDatabase open: conn=Open; connCSLen=72
+2025-12-01T20:43:11 - TestDatabase open: conn=Open; connCSLen=72

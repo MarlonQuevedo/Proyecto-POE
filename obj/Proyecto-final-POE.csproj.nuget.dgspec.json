@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lazar\\OneDrive\\Escritorio\\Desarrollo de Software\\POE\\Proyecto-final-POE\\Proyecto-final-POE.csproj": {}
+    "C:\\Users\\aassu\\source\\repos\\MarlonQuevedo\\Proyecto-final-POE\\Proyecto-POE\\Proyecto-final-POE\\Proyecto-final-POE.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lazar\\OneDrive\\Escritorio\\Desarrollo de Software\\POE\\Proyecto-final-POE\\Proyecto-final-POE.csproj": {
+    "C:\\Users\\aassu\\source\\repos\\MarlonQuevedo\\Proyecto-final-POE\\Proyecto-POE\\Proyecto-final-POE\\Proyecto-final-POE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lazar\\OneDrive\\Escritorio\\Desarrollo de Software\\POE\\Proyecto-final-POE\\Proyecto-final-POE.csproj",
+        "projectUniqueName": "C:\\Users\\aassu\\source\\repos\\MarlonQuevedo\\Proyecto-final-POE\\Proyecto-POE\\Proyecto-final-POE\\Proyecto-final-POE.csproj",
         "projectName": "Proyecto-final-POE",
-        "projectPath": "C:\\Users\\lazar\\OneDrive\\Escritorio\\Desarrollo de Software\\POE\\Proyecto-final-POE\\Proyecto-final-POE.csproj",
-        "packagesPath": "C:\\Users\\lazar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lazar\\OneDrive\\Escritorio\\Desarrollo de Software\\POE\\Proyecto-final-POE\\obj\\",
+        "projectPath": "C:\\Users\\aassu\\source\\repos\\MarlonQuevedo\\Proyecto-final-POE\\Proyecto-POE\\Proyecto-final-POE\\Proyecto-final-POE.csproj",
+        "packagesPath": "C:\\Users\\aassu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aassu\\source\\repos\\MarlonQuevedo\\Proyecto-final-POE\\Proyecto-POE\\Proyecto-final-POE\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\lazar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aassu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -66,24 +70,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
